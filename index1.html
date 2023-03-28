@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ </title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        #container {
+            width: 1260px;
+            position: relative;
+            display: block;
+            padding: 120px;
+            height: 600px;
+            border-style: groove;
+        }
+        
+        #header {
+            border-radius: 1 solid px rgb(82, 82, 240);
+            background-color: rgb(82, 82, 240);
+            height: 150px;
+        }
+        
+        #content {
+            border-radius: 2px solid blue;
+            border-style: dashed;
+            height: 285px;
+            background-color: blue;
+            display: flex;
+        }
+        
+        #controduction {
+            background-color: white;
+            color: red;
+            text-shadow: 5px 5px 5px 5px;
+        }
+        
+        #footer {
+            background-color: rgb(82, 82, 235);
+            color: White;
+            text-align: center;
+        }
+        
+        #left {
+            border-radius: 15px;
+            background-color: white;
+            flex-basis: 50%;
+            text-align: center;
+        }
+        
+        #form {
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+            flex-basis: 50%;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li {
+            float: left;
+        }
+        
+        nav a {
+            display: block;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        
+        nav a:hover {
+            background-color: rgb(237, 237, 241);
+            color: aqua;
+        }
+        
+        nav a:focus {
+            outline: none;
+        }
+        
+        nav a.active {
+            background-color: aquamarine;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <nav>
+                <ul>
+                    <li a href="#">Trang chủ</li>
+                    <li a href="#">Giới thiệu </li>
+                    <li a href="#">Sản phẩm </li>
+                    <li a href="#">Hồ sơ chuyên viên </li>
+                    <li a href="#">Kiến thức bảo hiểm </li>
+                    <li a href="#">Hỗ trợ khách hàng </li>
+                    <li a href="#">Liên hệ </li>
+                </ul>
+            </nav>
+            <br>
+            <div id="controduction">
+                <p>Với mục tiêu "chăm sóc sức khỏe của Quý khách hàng " , Tổng Công Ty Bảo Hiểm Việt Nam đã hoàn thành sản phẩm "Bảo hiểm Việt An Gia " mong khách hàng "An tâm tận hưởng cuộc sống " . </p> <br>
+                <Br>
+            </div>
+        </div>
+        <div id="content">
+
+            <div id="left">
+                <div id="inside">
+                    <p style="font-size: medium ;float:left ">Bảo Việt An Gia </p>
+                    <ol>
+                        <li>
+                            <p><b>Đảm bảo tài chính vững vàng trước rủi ro.</b></p>
+                            <p>Giảm bớt áp lực tài chính khi gặp sự cố xảy ra , giúp bạn an tâm điều trị.</p>
+                        </li>
+                        <li>
+                            <p><b>Dịch vụ bảo lãnh viện phí rộng khắp Việt Nam.</b>
+                            </p>
+                            <p>Tùy chọn bệnh viện tư nhân và quốc tế trên toàn quốc mà bạn tin tưởng.</p>
+                        </li>
+                        <li>
+                            <p><b>Mua nhanh đơn giản, không cần tham chiếu sức khỏe. </b></p>
+                            <p>Đăng ký nhanh gọn chỉ trong vòng 5 phút và ghi chỉ từ 30000 đồng/ngày.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div id="form">
+                <form>
+                    <h5>Nhập thông tin để được tư vấn miễn phí </h5>
+                    <div>
+                        <input type="text" placeholder=" Họ tên *">
+                        <input type="number" placeholder="Số điện thoại *">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email *">
+                        <label for="Lựa chọn thành phố sống">Lựa chọn thành phố sống*:</label>
+                        <select id="Lựa chọn thành phố sống" name="Thành phố ">
+                      <option>BRVT</option>
+                      <option>SG</option>
+                      <option>Vinh</option>
+                      <option>HN</option> 
+                      <option>...</option>
+                      </select>
+                    </div>
+
+                    <div>
+                        <label for="Mục đích mua bảo hiểm">Mục đích mua bảo hiểm*: </label>
+                        <select id="Mục đích mua bảo hiểm" name="Mục đích ">
+                        <option>Mua cho gia đình</option>
+                        <option>Mua cho bản thân</option>
+                        <option>Mua cho bạn bè</option>
+                        <option>...</option> 
+                        </select>
+                        <label for="Nhập ngày sinh"> Nhập ngày sinh :*</label>
+                        <input type="date" placeholder="Nhập ngày sinh">
+                    </div>
+                    <div>
+                        <label for="Câu hỏi:"> Câu hỏi:*</label>
+                        <input type="message" aria-placeholder="Comment">
+                        <p>Nếu bạn có thắc mắc gì với chúng tôi , Hãy liên hệ qua số : <a href="#">0123456789</a> hoặc gmai: <a href="#">abcdef@gmail.com</a></p>
+                    </div>
+                    <input type="submit" placeholder="Đăng kí thành công ">
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p> Họ và Tên : Hồ Trường Minh Phú</p>
+            <p> Mã sinh viên : 21089881 </p>
+            <p> Tên lớp : DHHTTT17BTT </p>
+        </div>
+    </div>
+</body>
+
+</html>
